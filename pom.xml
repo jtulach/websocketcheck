@@ -47,4 +47,21 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <configuration>
+                    <executable>${java.home}/bin/java</executable>
+                    <arguments>
+                        <argument>-cp</argument>
+                        <classpath/>
+                        <argument>org.apidesign.demo.websocketcheck.Main</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
