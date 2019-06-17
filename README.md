@@ -28,3 +28,5 @@ never connects to the server:
 ```bash
 websocketcheck$ JAVA_HOME=/jdk1.8.0_212/ mvn package exec:exec
 ```
+
+This problem is reported as [JDK-8226229](https://bugs.openjdk.java.net/browse/JDK-8226229).
