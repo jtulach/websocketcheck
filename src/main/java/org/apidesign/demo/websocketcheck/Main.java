@@ -15,6 +15,7 @@ public class Main {
         System.err.println("app: " + app);
         System.err.println("uri: " + uri);
 
+        WebViewBrowser.showURI(uri);
         OpenBrowser.showURI(uri);
 
         System.in.read();
